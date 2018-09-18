@@ -1,2 +1,3 @@
 ---
-# tasks file for vnpm
+
+- import_tasks: structure.yml

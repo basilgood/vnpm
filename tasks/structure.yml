@@ -1,0 +1,56 @@
+---
+
+- name: Pack plugins directories
+  file:
+    path: '{{ start_directory_path }}'
+    state: directory
+
+- name: Create opt directory
+  file:
+    path: '{{ opt_directory_path }}'
+    state: directory
+
+- name: Create colors directory
+  file:
+    path: '{{ colors_directory_path }}'
+    state: directory
+
+- name: Create autoload directory
+  file:
+    path: '{{ autoload_directory_path }}'
+    state: directory
+
+- name: Create after directory
+  file:
+    path: '{{ after_directory_path }}'
+    state: directory
+
+- name: Create ftplugin directory
+  file:
+    path: '{{ ftplugin_directory_path }}'
+    state: directory
+
+- name: Create ftdetect directory
+  file:
+    path: '{{ ftdetect_directory_path }}'
+    state: directory
+
+- name: Create indent directory
+  file:
+    path: '{{ indent_directory_path }}'
+    state: directory
+
+- name: Create syntax directory
+  file:
+    path: '{{ syntax_directory_path }}'
+    state: directory
+
+- name: Create compiler directory
+  file:
+    path: '{{ compiler_directory_path }}'
+    state: directory
+
+- name: Create doc directory
+  file:
+    path: '{{ doc_directory_path }}'
+    state: directory
