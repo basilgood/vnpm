@@ -1,2 +1,43 @@
 ---
-# defaults file for vnpm
+
+# vim or nvim
+editor_choice: 'vim'
+editor_user: 'ansible_user'
+user_path: '/home/{{ editor_user }}'
+
+# vim path
+vim_path_directory: '{{ user_path }}/.vim'
+nvim_path_directory: '{{ user_path }}/.config/nvim'
+
+# https or ssh
+plugin_clone_with: 'https'
+
+# plugins directories
+pack_directory_layout:
+  - start
+  - opt
+start_directory_path: '~/.vim/pack/plugins/start'
+opt_directory_path: '~/.vim/pack/plugins/opt'
+
+# plugin layout
+
+
+# config directories
+# colors_directory_path: '~/.vim/colors'
+# colors_directory: true
+# autoload_directory_path: '~/.vim/autoload'
+# autoload_directory: true
+# after_directory_path: '~/.vim/after'
+# after_directory: true
+# ftplugin_directory_path: '~/.vim/ftplugin'
+# ftplugin_directory: true
+# ftdetect_directory_path: '~/.vim/ftdetect'
+# ftdetect_directory: true
+# indent_directory_path: '~/.vim/indent'
+# indent_directory: true
+# syntax_directory_path: '~/.vim/syntax'
+# syntax_directory: false
+# compiler_directory_path: '~/.vim/compiler'
+# compiler_directory: false
+# doc_directory_path: '~/.vim/doc'
+# doc_directory: false
